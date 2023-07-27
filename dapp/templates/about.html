@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About us</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <style>
+       .navbar-nav {
+          margin-left: auto;  
+          color: #fff!important;
+       }
+       .navbar-nav li{
+         text-align: center;
+         padding: 3px;
+         margin: 6px 4px;
+         font-size: 16px;
+         height: 40px;
+         width: 150px;
+         color:  #fff;
+         background-color:rgb(0, 109, 128);
+         transition: 0.8;
+         text-align: center;
+         font-family: "montserrat";
+         cursor: pointer;
+         border-radius: 8px;
+       }
+       .navbar-nav li:hover{
+         background-color: rgb(0, 7, 100);
+         border-radius: 16px;
+         color:  #fff;
+       }
+        .navbar{
+          background-image: linear-gradient(to right, #0abdf3,#030099);
+          padding: 0 !important;
+          border-style:inset;
+          border-right: hidden;
+          border-top: hidden;
+          border-left: hidden;
+          border-color: blue;
+          
+       }
+        .navbar-brand{
+          font-size: 24pt;
+          font-weight: bold;
+          padding-left: 20px;
+        }
+        #banner{
+            background-image: linear-gradient(to right,skyblue,darkblue);
+          color: #fff;
+          padding-top: 1%;
+          padding-bottom: 2%;
+        }
+        #wave{
+            background-image: linear-gradient(to right,skyblue,darkblue);
+        }
+        .container {
+        width:80%;
+        margin:50px auto;
+        height: 50%;
+        }
+        .about-box{
+        background: #fff;
+        display: flex;
+        }
+        .about-left{
+        flex-basis: 60%;
+        padding: 40px 60px;
+        }
+        .about-right{
+        flex-basis: 40%;
+        padding: 40px ;
+        background:#5f4180;
+        color: #fff ;
+        }
+        h2{ 
+        margin-bottom: 10px;
+        }
+        .container p{
+        margin-bottom: 40px;
+        }
+      
+    </style>
+    
+  </head>
+  <body  onload="getProductData()">
+<!-- NavBar starts -->
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+ <h3 style="color: #fff;">Django Payment Gateway</h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}" style="color: #fff;">Home</a>
+        </li>
+       
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'about' %}" style="color: #fff;">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'members' %}" style="color: #fff;">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'ratings' %}" style="color: #fff;">Ratings</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <section id="banner">
+    <div class="container">
+        <h1>About Us </h1>
+        <p> Python-Django Payment Integration Using Razorpay. </p>
+        <div class="about-box">
+        <div class="about-left">
+        <h3 style="color: blueviolet;"> Python-Django Payment Integration Using Razorpay.</h3>
+        </div>
+        <div class="about-right">
+        <h4> Project Team Members</h4>
+        <h4> 1. Soham Adhyapak </h4>
+        <h4> 2. Nikita Pawar </h4>
+        <h4> 3. Vedant Deshpande </h4>
+        <h4> 4. Urmila Talikoti </h4>
+        <h4> 5. Atharva Kulkarni </h4>
+                                                                                                                                                                                                                                                                                                                                                                                                           
+        </div>
+        </div>
+        </div>
+    
+  </section>
+  <section id="wave">
+    <svg  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" ><path  d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill" fill="#FFFFFF" fill-opacity="1"></path></svg>
+</section>
+      
+  </body>
+</html>
